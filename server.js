@@ -7,7 +7,7 @@ const MONGO_URL = process.env.MONGO_URL;
 const start = async () => {
     try {
         await connectDB(MONGO_URL);
-        app.listen(PORT, () => {console.log(`Server listening on PORT: ${PORT}`)})
+        app.listen(PORT, () => {console.log(`Server listening on PORT: ${PORT}`)});
     } catch (error) {
         console.log("Error starting server", error);
     }
