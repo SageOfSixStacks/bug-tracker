@@ -38,6 +38,7 @@ export const getBug = async (req, res) => {
     }
 }
 
+// WORK ON THESE TWO CONTROLLERS
 export const updateBug = async (req, res) => {
     try {
         const {title, description, status} = req.body;
