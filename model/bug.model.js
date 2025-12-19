@@ -4,7 +4,8 @@ const BugSchema = new Schema({
     title: String,
     description: String,
     status: {type: String, enum: ["open", "in progress", "closed"], default: "open"},
-}, {timeStamp: true});
+    createdAt: {type: Date},
+}, {timestamp: true});
 
 
 export default model("Bug", BugSchema);

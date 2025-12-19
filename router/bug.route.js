@@ -3,8 +3,8 @@ import { createBug, getAllbugs, getBug, updateBug, deleteBug } from "../controll
 
 const router = express.Router();
 
-router.route("/api/bug").post(createBug).get(getAllbugs);
-router.route("/api/bug/:id").get(getBug).patch(updateBug).delete(deleteBug);
+router.route("/").post(createBug).get(getAllbugs);
+router.route("/:id").get(getBug).patch(updateBug).delete(deleteBug);
 
 
 export default router;

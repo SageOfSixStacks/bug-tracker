@@ -6,9 +6,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/", bugRouter)
+app.use("/api/bug", bugRouter)
 
 app.use(notFound);
-
 
 export default app;
